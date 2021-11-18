@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            padding: 10px;
+            padding-top: 5px;
+            color: white;
+        }
+
+        body{
+            min-height: 100vh;
+            background: url(../test/resort_image.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            font-family: 'Montserrat', sans-serif;
+            overflow-x: hidden;
+        }
+
+        body::after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 0;
+            background-color: rgba(0, 89, 255, 0.6);
+        }
+
+        .navbar {
+            padding: 20px;
+            z-index: 10;
+        }
+
+        .nav-list {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 26px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .nav-item {
+            display: flex;
+            margin-right: 35px;
+            z-index: 10;
+            font-weight: 500;
+
+        }
+
+        .nav-item:first-child {
+            margin-right: auto;
+            margin-left: 25px;
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        .content{
+            display: flex;
+            flex-direction: column;
+            float: right;
+            width: 45%;
+            margin-left: 15%;
+            padding-top: 20vh;
+            margin-right: 0px;
+
+        }
+
+        .content .tagline {
+            font-size: 26px;
+            z-index: 10;
+            padding-top: 10px;
+            color: white;
+        }
+
+        .content h1{
+            font-weight: 800;
+        }
+
+        .content .text {
+            font-size: larger;
+            z-index: 10;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item">HarborLights</li>
+            <li class="nav-item">Home</li>
+            <li class="nav-item">About Us</li>
+            <li class="nav-item">Our Rooms</li>
+            <li class="nav-item">Blog</li>
+            <li class="nav-item">Contact</li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="text">
+            <h3>MORE THAN A HOTEL ... AN EXPERIENCE</h3>
+        </div>
+        <div class="tagline">
+            <h1>HOTEL FOR THE WHOLE FAMILY ALL THE YEAR AROUND</h1>
+        </div>
+    </div>
+</body>
+
+</html>
